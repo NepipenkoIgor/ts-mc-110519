@@ -9,11 +9,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-        extensions: ['.ts', '.js', '.json']
+        extensions: ['.ts', '.tsx',  '.js', '.json']
     },
     module: {
         rules: [
-            {test: /\.ts$/, loader: 'ts-loader'},
+            {test: /\.tsx?$/, loader: 'ts-loader'},
             {test: /\.css$/, use: ['style-loader', 'css-loader']},
         ]
     },
